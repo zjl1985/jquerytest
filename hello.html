@@ -1,18 +1,69 @@
 <html>
+<meta charset="UTF-8">
 
 <head>
-    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="moment.min.js"></script>
-    <script type="text/javascript" src="jquery-test.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <p id="p_log"></p>
-    <table>
-        <thead></thead>
-        <tbody></tbody>
-    </table>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary">生成表格</button>
+
+                <button type="button" class="btn btn-default">换换样子</button>
+
+                <button type="button" class="btn btn-secondary">改改input</button>
+
+                <button type="button" class="btn btn-success">再换换样子</button>
+
+                <button type="button" class="btn btn-info">获取选中</button>
+
+                <button type="button" class="btn btn-warning">Warning</button>
+
+                <button type="button" class="btn btn-danger">清空日志</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-block">
+                    <p class="card-text" id="p_log"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead class="thead-inverse">
+                        <tr>
+                            <th>Title1</th>
+                            <th>Title2</th>
+                            <th>Title3</th>
+                            <th>Title4</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
 </body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/lodash.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/tether.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/jquery-test.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         JqueryTest.init();
