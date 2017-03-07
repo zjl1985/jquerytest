@@ -2,4 +2,3 @@ baseurl: /jquerytest
 theme: jekyll-theme-architect
 title: "我的测试博客"
 description: "测试用的"
-show_downloads:"false"
