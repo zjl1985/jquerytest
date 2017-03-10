@@ -1,0 +1,62 @@
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-sm btn-primary">输出</button>
+
+                <button type="button" class="btn btn-sm  btn-secondary">赋值</button>
+
+                <button type="button" class="btn btn-sm btn-success">之前之后</button>
+
+                <button type="button" class="btn btn-sm btn-info">获取选中</button>
+
+                <button type="button" class="btn btn-sm btn-warning">UTC</button>
+
+                <button type="button" class="btn btn-sm btn-danger">清空日志</button>
+            </div>
+            <div class="col-md-2">
+                <input type="date" id="datepicker1" class="form-control" />
+            </div>
+            <div class="col-md-2">
+                <input type="date" id="datepicker2" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-block">
+                    <p class="card-text" id="p_log"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/lodash.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="../js/tether.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+<script type="text/javascript" src="../js/moment.min.js"></script>
+<script type="text/javascript" src="moment-test.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        momentTest.init();
+    });
+
+</script>
+
+</html>
